@@ -9,7 +9,7 @@ triggers:
     trigger: state
 conditions:
   - condition: time
-    after: "05:00:00"
+    after: "03:00:00"
     weekday:
       - mon
       - tue
@@ -18,7 +18,7 @@ conditions:
       - fri
       - sat
       - sun
-    before: "23:00:00"
+    before: "00:00:00"
 actions:
   - sequence:
       - action: switch.turn_on
